@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TJA | أكاديمية بناء شخصية الطفل وتعديل السلوك الإيجابي</title>
+    
+    <!-- SEO Optimization -->
+    <meta name="description" content="أكاديمية TJA متخصصة في تعديل سلوك الأطفال، التعامل مع الطفل العنيد والعصبي، وتربية المراهقين. استشارات تربوية، برامج بناء شخصية، ومعسكرات صيفية.">
+    <meta name="keywords" content="تعديل سلوك الأطفال, الطفل العنيد, كيف اتعامل مع الطفل العنيد, التربية الإيجابية, تربية الأطفال, التعامل مع المراهقين, دكتور سلوكيات أطفال, تخاطب وتعديل سلوك, استشارة تربوية, معسكر صيفي للأطفال, بناء شخصية الطفل, TJA, أكاديمية تربوية">
+    <meta name="author" content="Roshda Academy">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="TJA | تعديل سلوك الأطفال وتربية إيجابية">
+    <meta property="og:description" content="أكاديمية تربوية وسلوكية متخصصة في تعديل سلوك الأطفال والتعامل مع الطفل العنيد والمراهقين. استشارات تربوية وبرامج بناء شخصية.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tjasport.com/">
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="css/tja-framework.css">
+</head>
+<body>
+
+    <!-- Ambient Cursor Glow Effect -->
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-glow-layer" id="glow-layer"></div>
+    <div class="radial-accent-1"></div>
+    <div class="radial-accent-2"></div>
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar" id="main-navbar">
+        <a href="#hero" class="nav-brand" id="logo-link">
+            <img src="images/tja_icon.png" alt="TJA Logo">
+            <span>TJA</span>
+        </a>
+        
+        <ul class="nav-links" id="menu-links">
+            <li><a href="#hero" id="link-hero" data-i18n="nav_home"></a></li>
+            <li><a href="#challenges" id="link-challenges" data-i18n="nav_challenges"></a></li>
+            <li><a href="#founder" id="link-founder" data-i18n="nav_founder"></a></li>
+            <li><a href="#methodology" id="link-methodology" data-i18n="nav_methodology"></a></li>
+            <li><a href="#programs" id="link-programs" data-i18n="nav_programs"></a></li>
+            <li><a href="#gallery" id="link-gallery" data-i18n="nav_gallery"></a></li>
+            <li><a href="#testimonials" id="link-testimonials" data-i18n="nav_testimonials"></a></li>
+        </ul>
+        
+        <div class="nav-actions">
+            <a href="#contact" class="tja-btn tja-btn-primary magnetic-btn" id="nav-cta-btn">
+                <span>تواصل معنا</span>
+            </a>
+        </div>
+
+        <button class="nav-mobile-toggle" aria-label="Toggle Navigation Menu" id="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section" id="hero">
+        <!-- Interactive Particle Canvas -->
+        <canvas id="hero-particles" class="hero-canvas"></canvas>
+        
+        <div class="container">
+            <div class="hero-grid">
+                
+                <!-- Text Content -->
+                <div class="hero-content">
+                    <div class="hero-badge tja-reveal">
+                        <span class="hero-badge-dot"></span>
+                        <span>أكاديمية تربوية وسلوكية متخصصة</span>
+                    </div>
+                    
+                    <h1 class="hero-title tja-reveal tja-delay-1" id="hero-main-title">
+                        <span class="reveal-text"><span class="tja-scramble">مشكلته مش في السلوك وبس...</span></span>
+                        <span class="reveal-text"><span class="tja-scramble">أحيانًا المشكلة في الطريقة.</span></span>
+                    </h1>
+                    
+                    <p class="hero-description tja-reveal tja-delay-2" id="hero-subtext">
+                        في TJA نساعد طفلك على بناء شخصيته وتعديل سلوكه من الجذور. لا نعاقب وبنصلّح، ولكن بنفهم وبنبني وبنطوّر ليكون طفلك واثقاً من نفسه وقادراً على مواجهة التحديات.
+                    </p>
+                    
+                    <div class="hero-ctas tja-reveal tja-delay-3">
+                        <a href="#contact" class="tja-btn tja-btn-primary magnetic-btn" id="hero-primary-cta">
+                            <span>احجز استشارتك المجانية الآن</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                        <a href="#programs" class="tja-btn tja-btn-secondary" id="hero-secondary-cta">
+                            <span>اكتشف برامجنا</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Interactive Parallax Shapes -->
+                <div class="hero-visual tja-reveal tja-delay-2" id="hero-interactive-zone">
+                    <div class="floating-card-container">
+                        
+                        <!-- Core Glassmorphic Card -->
+                        <div class="hero-glass-card">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div style="width: 12px; height: 12px; border-radius: 50%; background: #fb508d;"></div>
+                                <div style="width: 12px; height: 12px; border-radius: 50%; background: #fbc723;"></div>
+                                <div style="width: 12px; height: 12px; border-radius: 50%; background: #6cbff3;"></div>
+                            </div>
+                            
+                            <div style="margin-top: 2rem;">
+                                <span style="font-size: 0.8rem; color: var(--primary); font-weight: 600; text-transform: uppercase;">TJA كامب ٢٠٢٦</span>
+                                <h3 style="font-size: 1.5rem; margin-top: 0.5rem; color: #fff;">رحلة عملية لبناء شخصية طفلك</h3>
+                                <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">نعتمد منهجيات علمية عالمية تناسب الهوية العربية والتربية السليمة.</p>
+                            </div>
+                            
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
+                                <div style="display: flex; -webkit-box-orient: horizontal; gap: -5px;">
+                                    <div style="width: 28px; height: 28px; border-radius: 50%; background: #374151; border: 2px solid var(--bg-main); display: flex; align-items: center; justify-content: center; font-size: 0.65rem; color: var(--primary);">+٥٠</div>
+                                </div>
+                                <span style="font-size: 0.75rem; color: var(--text-muted);">الأماكن محدودة!</span>
+                            </div>
+                        </div>
+
+                        <!-- Floating Geometric Background Shapes (Parallax-enabled) -->
+                        <div class="floating-shape shape-1" id="p-shape-1">
+                            <span style="font-size: 1.5rem;">🌱</span>
+                        </div>
+                        <div class="floating-shape shape-2" id="p-shape-2">
+                            <span style="font-size: 1.5rem;">🎓</span>
+                        </div>
+                        <div class="floating-shape shape-3" id="p-shape-3">
+                            <span style="font-size: 1rem;">✨</span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Scrolling Marquee Ticker -->
+    <div class="marquee-container">
+        <div class="marquee-content">
+            <span>✨ التربية الإيجابية تبدأ من هنا</span>
+            <span class="marquee-dot"></span>
+            <span>💡 بناء شخصية متكاملة</span>
+            <span class="marquee-dot"></span>
+            <span>🌟 تعديل سلوك الطفل العنيد</span>
+            <span class="marquee-dot"></span>
+            <span>🚀 معسكرات قادة الغد</span>
+            <span class="marquee-dot"></span>
+            <span>✨ التربية الإيجابية تبدأ من هنا</span>
+            <span class="marquee-dot"></span>
+            <span>💡 بناء شخصية متكاملة</span>
+            <span class="marquee-dot"></span>
+            <span>🌟 تعديل سلوك الطفل العنيد</span>
+            <span class="marquee-dot"></span>
+            <span>🚀 معسكرات قادة الغد</span>
+        </div>
+    </div>
+
+    <!-- Challenges Section -->
+    <section class="section-padding bg-alt" id="challenges">
+        <div class="container">
+            
+            <div class="section-header tja-reveal">
+                <span class="section-subtitle">ابنك بيمر بأي حاجة من دي؟</span>
+                <h2 class="section-title">اعرف إنك مش لوحدك، وإحنا هنا نساعدك</h2>
+                <p class="section-desc">مواجهة التحديات السلوكية مع الأطفال هي مرحلة طبيعية، الخطوة الأهم هي التوجيه العلمي السليم.</p>
+            </div>
+
+            <div class="problem-grid">
+                
+                <!-- Card 1 -->
+                <div class="problem-card tja-reveal tja-delay-1" id="challenge-card-1">
+                    <div class="problem-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                    </div>
+                    <h3>العصبية وسرعة الانفعال</h3>
+                    <p>هل طفلك بيتعصب بسرعة، وبيلاقي صعوبة في التحكم في مشاعره أو التعبير عنها بشكل هادئ؟</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="problem-card tja-reveal tja-delay-2" id="challenge-card-2">
+                    <div class="problem-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    </div>
+                    <h3>التشتت وقلة التركيز</h3>
+                    <p>مش بيقدر يركز في المذاكرة أو في نشاط معين لفترة كافية، وبيتشتت بسهولة مع المؤثرات الخارجية؟</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="problem-card tja-reveal tja-delay-3" id="challenge-card-3">
+                    <div class="problem-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                    </div>
+                    <h3>العناد ورفض التوجيه</h3>
+                    <p>بيرفض يسمع الكلام وبيعاند لمجرد الرفض، مما يخلق صدامات يومية مستمرة وصعوبة في النقاش.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="problem-card tja-reveal tja-delay-1" id="challenge-card-4">
+                    <div class="problem-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <h3>ضعف الشخصية والانطواء</h3>
+                    <p>بيشعر بالخجل الزائد، عنده صعوبة في الدفاع عن نفسه أو اتخاذ قرارات بسيطة وبيهاب التجمعات.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="problem-card tja-reveal tja-delay-2" id="challenge-card-5">
+                    <div class="problem-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                    </div>
+                    <h3>صعوبة التواصل والتفاعل</h3>
+                    <p>بيواجه تحديات في بناء صداقات مع زملائه، أو في شرح ما يدور بداخله من أفكار ومشاعر للأهل.</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="problem-card tja-reveal tja-delay-3" id="challenge-card-6">
+                    <div class="problem-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                    </div>
+                    <h3>إدمان الهواتف والشاشات</h3>
+                    <p>بيقضي أغلب وقته خلف شاشات التابلت والتليفون، مع تأثير واضح على نشاطه البدني وحالته النفسية.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section class="section-padding" id="founder">
+        <div class="container">
+            <div class="founder-card tja-reveal">
+                <div class="founder-image">
+                    <img src="images/dr_mostafa.jpg" alt="دكتور مصطفى - رئيس مجلس إدارة الأكاديمية">
+                </div>
+                <div class="founder-content">
+                    <span class="section-subtitle">كلمة المؤسس</span>
+                    <h2 class="section-title">د. مصطفى</h2>
+                    <h4 class="founder-title">رئيس مجلس إدارة الأكاديمية</h4>
+                    <p class="section-desc">
+                        "نحن لا نهدف فقط إلى تعديل سلوك الأطفال، بل إلى بناء شخصيات قوية قادرة على مواجهة المستقبل بثقة. في TJA، نؤمن بأن كل طفل يحمل بداخله قائداً ينتظر التوجيه السليم."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section class="section-padding" id="methodology">
+        <div class="container">
+            
+            <div class="section-header tja-reveal">
+                <span class="section-subtitle">منهج TJA في البناء والتعديل</span>
+                <h2 class="section-title">العقاب ليس حلاً، بل المنهجية هي الأساس</h2>
+                <p class="section-desc">نحن نعمل معكم خطوة بخطوة وفق مسار سلوكي علمي يضمن نتائج حقيقية ومستدامة لطفلك.</p>
+            </div>
+
+            <div class="method-timeline">
+                
+                <!-- Step 1 -->
+                <div class="method-step tja-reveal tja-delay-1" id="method-step-1">
+                    <div class="method-number">٠١</div>
+                    <h3>نفهم طفلك أولاً</h3>
+                    <p>نبدأ بجلسة استشارية وتقييم سلوكي شامل لنفهم الصورة الكاملة من منظور الأهل والطفل.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="method-step tja-reveal tja-delay-2" id="method-step-2">
+                    <div class="method-number">٠٢</div>
+                    <h3>نبني بيئة آمنة</h3>
+                    <p>نوفر بيئة تفاعلية يتدرب فيها طفلك على المهارات السلوكية دون خوف من النقد أو الأحكام.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="method-step tja-reveal tja-delay-3" id="method-step-3">
+                    <div class="method-number">٠٣</div>
+                    <h3>نطور بالتطبيق العملي</h3>
+                    <p>تعديل السلوك عبر أنشطة وألعاب تعلّم الطفل التحكم الذاتي وبناء المهارات القيادية والشخصية.</p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="method-step tja-reveal tja-delay-4" id="method-step-4">
+                    <div class="method-number">٠٤</div>
+                    <h3>نتابع ونوجّه الأهل</h3>
+                    <p>لا نتركك بمفردك؛ نزود الأهل بأدوات تربوية وخطط منزلية لضمان استمرارية التطور الإيجابي.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Programs Grid (3 Columns) -->
+    <section class="section-padding bg-alt" id="programs">
+        <div class="container">
+            
+            <div class="section-header tja-reveal">
+                <span class="section-subtitle">برامجنا التربوية والتطويرية</span>
+                <h2 class="section-title">اختر المسار التربوي الأنسب لطفلك</h2>
+                <p class="section-desc">برامج متخصصة مصممة بعناية لتغطي مختلف الفئات العمرية والاحتياجات السلوكية لوليدكم.</p>
+            </div>
+
+            <div class="programs-grid">
+                
+                <!-- Program 1 -->
+                <div class="program-card tja-reveal tja-delay-1" id="program-card-1">
+                    <div class="program-card-header">
+                        <h3 class="program-title">برنامج بناء شخصية الطفل</h3>
+                        <span class="program-age">السن: ٦ - ١٢ سنة</span>
+                    </div>
+                    
+                    <p class="program-desc">يركز على غرس القيم الأساسية، تنمية الثقة بالنفس، والتدريب على مهارات التفكير وحل المشكلات البسيطة.</p>
+                    
+                    <ul class="program-features">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>جلسات تعديل سلوك جماعية وتفاعلية</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>تنمية الذكاء العاطفي والتعبير عن النفس</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>خطط تربوية أسبوعية للمتابعة بالمنزل</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>استشارة خاصة شهرية لولي الأمر</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="#contact" class="tja-btn tja-btn-secondary magnetic-btn" id="inquire-btn-1">
+                        <span>سجل اهتمامك بالبرنامج</span>
+                    </a>
+                </div>
+
+                <!-- Program 2 -->
+                <div class="program-card tja-reveal tja-delay-2" id="program-card-2">
+                    <span class="program-popular-badge">الأكثر طلباً</span>
+                    <div class="program-card-header">
+                        <h3 class="program-title">برنامج تأهيل المراهقين</h3>
+                        <span class="program-age">السن: ١٣ - ١٧ سنة</span>
+                    </div>
+                    
+                    <p class="program-desc">مصمم لمرافقة المراهق في هذه المرحلة الانتقالية الصعبة. نركز على مهارات القيادة، مواجهة ضغوط الأقران، وبناء الهوية.</p>
+                    
+                    <ul class="program-features">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>تطوير مهارات القيادة والذكاء الاجتماعي</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>ورش عمل للتعامل مع التوتر والضغوطات</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>جلسات كوتشينج فردية لتحديد الأهداف</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>توجيه وإرشاد تخصصي للأسر</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="#contact" class="tja-btn tja-btn-primary magnetic-btn" id="inquire-btn-2">
+                        <span>سجل اهتمامك بالبرنامج</span>
+                    </a>
+                </div>
+
+                <!-- Program 3 -->
+                <div class="program-card tja-reveal tja-delay-3" id="program-card-3">
+                    <div class="program-card-header">
+                        <h3 class="program-title">كامب TJA التربوي التفاعلي</h3>
+                        <span class="program-age">السن: ٦ - ١٧ سنة</span>
+                    </div>
+                    
+                    <p class="program-desc">تجربة معايشة مكثفة (أيام صيفية/شتوية) تعتمد على أنشطة التعلم بالتجربة لبناء المهارات السلوكية والاعتماد على الذات.</p>
+                    
+                    <ul class="program-features">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>أنشطة حركية وبدنية لبناء روح الفريق</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>انفصال كامل عن الهواتف طوال الكامب</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>تقييم نهائي مفصل لكل مشارك بعد الكامب</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>بيئة إيجابية صحية ومرحة تحت إشراف تربويين</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="#contact" class="tja-btn tja-btn-secondary magnetic-btn" id="inquire-btn-3">
+                        <span>احجز مقعد طفلك الآن</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Before & After Comparison Grid -->
+            <div class="results-container tja-reveal">
+                <div class="results-grid">
+                    <div class="results-intro">
+                        <span style="color: var(--primary); font-size: 0.85rem; font-weight: 600;">نتائج عملنا التربوي</span>
+                        <h3>كيف تبدو نتائج البناء التربوي مع TJA؟</h3>
+                        <p>الفرق بين الأسلوب التقليدي المضغوط والمنهج التربوي المنظم يظهر جلياً في سلوكيات الطفل اليومية وعلاقته بوالديه.</p>
+                        <a href="#contact" class="tja-btn tja-btn-primary magnetic-btn" id="results-cta">
+                            <span>ابدأ رحلة التغيير</span>
+                        </a>
+                    </div>
+                    
+                    <div class="results-boxes">
+                        
+                        <!-- Row 1 -->
+                        <div class="result-box-wrapper">
+                            <div class="result-box before">
+                                <h4>قبل الانضمام</h4>
+                                <p>ردود أفعال عنيفة وعصبية، وصعوبة بالغة في التعبير عن الاحتياجات أو سماع الكلام.</p>
+                            </div>
+                            <div class="result-box after">
+                                <h4>بعد الانضمام لـ TJA</h4>
+                                <p>قدرة على إدارة مشاعر الغضب، هدوء نسبي، ونقاش عاقل بين الطفل ووالديه.</p>
+                            </div>
+                        </div>
+
+                        <!-- Row 2 -->
+                        <div class="result-box-wrapper">
+                            <div class="result-box before">
+                                <h4>قبل الانضمام</h4>
+                                <p>انعزال مستمر خلف الهواتف، وكسل شديد عن أداء الواجبات أو التفاعل الأسري.</p>
+                            </div>
+                            <div class="result-box after">
+                                <h4>بعد الانضمام لـ TJA</h4>
+                                <p>تنظيم أوقات الشاشات، إحساس بالمسؤولية، وحرص على المشاركة في الأنشطة الأسرية والبدنية.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Gallery Section (صور أبطالنا) -->
+    <section class="section-padding bg-alt" id="gallery">
+        <div class="container">
+            
+            <div class="section-header tja-reveal">
+                <span class="section-subtitle" data-i18n="gallery_subtitle">أبطالنا في الميدان</span>
+                <h2 class="section-title" data-i18n="gallery_title">معرض صور أبطال أكاديمية TJA</h2>
+                <p class="section-desc" data-i18n="gallery_desc">لقطات مميزة من الأنشطة والتدريبات الرياضية والتربوية لأبطالنا أثناء رحلة البناء والقيادة.</p>
+            </div>
+
+            <!-- Horizontal Scroll Gallery Container -->
+            <div class="gallery-wrapper tja-reveal">
+                <div class="gallery-track" id="gallery-track">
+                    <div class="gallery-item">
+                        <img src="images/players/p1.jpg" alt="بطل TJA">
+                        <div class="gallery-overlay">
+                            <span>بطل TJA 🌟</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/players/p2.jpg" alt="بطل TJA">
+                        <div class="gallery-overlay">
+                            <span>بطل TJA 🌟</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/players/p3.jpg" alt="بطل TJA">
+                        <div class="gallery-overlay">
+                            <span>بطل TJA 🌟</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/players/p4.jpg" alt="بطل TJA">
+                        <div class="gallery-overlay">
+                            <span>بطل TJA 🌟</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/players/p5.jpg" alt="بطل TJA">
+                        <div class="gallery-overlay">
+                            <span>بطل TJA 🌟</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/players/p6.jpg" alt="بطل TJA">
+                        <div class="gallery-overlay">
+                            <span>بطل TJA 🌟</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/players/p7.jpg" alt="بطل TJA">
+                        <div class="gallery-overlay">
+                            <span>بطل TJA 🌟</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/players/p8.jpg" alt="بطل TJA">
+                        <div class="gallery-overlay">
+                            <span>بطل TJA 🌟</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Controls for horizontal scroll (Custom buttons) -->
+                <div class="gallery-controls">
+                    <button class="gallery-nav-btn prev" id="gallery-prev" aria-label="السابق">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </button>
+                    <button class="gallery-nav-btn next" id="gallery-next" aria-label="التالي">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section-padding" id="testimonials">
+        <div class="container">
+            
+            <div class="section-header tja-reveal">
+                <span class="section-subtitle">شهادات وقصص نجاح</span>
+                <h2 class="section-title">ماذا يقول أولياء الأمور عن تجربتهم؟</h2>
+                <p class="section-desc">قصص حقيقية وتغيرات ملموسة لآباء وأمهات وجدوا في TJA الطريقة المناسبة لفهم أبنائهم.</p>
+            </div>
+
+            <div class="testimonials-wrapper tja-reveal">
+                <div class="testimonials-track" id="testimonial-slider-track">
+                    
+                    <!-- Slide 0 -->
+                    <div class="testimonial-card">
+                        <div style="font-size: 3rem; color: var(--gold-accent); opacity: 0.15; line-height: 1; margin-bottom: 1rem;">“</div>
+                        <p class="testimonial-quote">
+                            "ابني كان شديد العصبية وكنت أدخل معه في معارك يومية لم تكن تجلب سوى مزيد من العناد. بعد الانضمام لبرنامج الأطفال والمتابعة الأسبوعية مع المستشار، تعلمت كيف أستمع له، وتغيرت سلوكياته تماماً وأصبح أكثر هدوءاً."
+                        </p>
+                        <div class="testimonial-author">
+                            <span class="testimonial-name">أ. أميرة محمد</span>
+                            <span class="testimonial-relation">والدة الطفل يوسف (٩ سنوات)</span>
+                        </div>
+                    </div>
+
+                    <!-- Slide 1 -->
+                    <div class="testimonial-card">
+                        <div style="font-size: 3rem; color: var(--gold-accent); opacity: 0.15; line-height: 1; margin-bottom: 1rem;">“</div>
+                        <p class="testimonial-quote">
+                            "مرحلة المراهقة مع ابنتي كانت تشعرني بالخوف المستمر لقلة حوارنا. الكامب التربوي التفاعلي كان نقطة التحول؛ رجعت ابنتي واثقة بنفسها وتتحدث معي بصراحة تامة بعد انقطاعها عن الهواتف وتلقيها تدريب قيادي."
+                        </p>
+                        <div class="testimonial-author">
+                            <span class="testimonial-name">د. أحمد عبد الرحمن</span>
+                            <span class="testimonial-relation">والد المراهقة سارة (١٥ سنة)</span>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="testimonial-card">
+                        <div style="font-size: 3rem; color: var(--gold-accent); opacity: 0.15; line-height: 1; margin-bottom: 1rem;">“</div>
+                        <p class="testimonial-quote">
+                            "أفضل استثمار قمنا به لأبنائنا. البرامج في TJA عملية وليست مجرد نصائح تربوية نظرية. المتابعة المستمرة للأهل معنا كآباء كانت طوق النجاة لتطبيق التربية الإيجابية الصحيحة في المنزل."
+                        </p>
+                        <div class="testimonial-author">
+                            <span class="testimonial-name">أ. منى الهاشمي</span>
+                            <span class="testimonial-relation">والدة الطفلين خالد وليان</span>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="testimonial-card">
+                        <div style="font-size: 3rem; color: var(--gold-accent); opacity: 0.15; line-height: 1; margin-bottom: 1rem;">“</div>
+                        <p class="testimonial-quote">
+                            "كنت أعاني من مشكلة الكذب المستمر والخوف عند طفلي، وبعد جلسات التقييم في TJA أدركت أن المشكلة كانت في طريقتي في العقاب. شكراً لفريق الأكاديمية على توجيهي وتعديل سلوك طفلي بشكل جذري وإيجابي."
+                        </p>
+                        <div class="testimonial-author">
+                            <span class="testimonial-name">م. طارق حسن</span>
+                            <span class="testimonial-relation">والد الطفل عمر (٧ سنوات)</span>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="testimonial-card">
+                        <div style="font-size: 3rem; color: var(--gold-accent); opacity: 0.15; line-height: 1; margin-bottom: 1rem;">“</div>
+                        <p class="testimonial-quote">
+                            "كامب TJA الصيفي كان تجربة لا تُنسى لابني. لأول مرة أراه يعتمد على نفسه تماماً وينظم وقته بل وبدأ يعلم إخوته الصغار مهارات القيادة والذكاء العاطفي. تجربة فريدة أنصح بها كل أب وأم حريصين على مستقبل أبنائهم."
+                        </p>
+                        <div class="testimonial-author">
+                            <span class="testimonial-name">د. ريهام سعيد</span>
+                            <span class="testimonial-relation">والدة الطفل زياد (١٢ سنة)</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Slider Indicators / Dots -->
+                <div class="testimonial-controls">
+                    <button class="testimonial-dot active" data-slide="0" aria-label="شريحة الآراء الأولى"></button>
+                    <button class="testimonial-dot" data-slide="1" aria-label="شريحة الآراء الثانية"></button>
+                    <button class="testimonial-dot" data-slide="2" aria-label="شريحة الآراء الثالثة"></button>
+                    <button class="testimonial-dot" data-slide="3" aria-label="شريحة الآراء الرابعة"></button>
+                    <button class="testimonial-dot" data-slide="4" aria-label="شريحة الآراء الخامسة"></button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Lead Generation & Contact Form Section -->
+    <section class="section-padding bg-alt" id="contact">
+        <div class="container">
+            
+            <div class="contact-section-grid">
+                
+                <!-- Info text Column -->
+                <div class="contact-info tja-reveal tja-delay-1">
+                    <h2 class="contact-info-title">ابدأ أول خطوة عملية في التغيير اليوم</h2>
+                    <p class="contact-info-desc">
+                        سجل بياناتك الآن ليتصل بك أحد مستشارينا التربويين لتنسيق موعد جلسة تقييم مجانية لطفلك وتحديد البرنامج الأنسب له.
+                    </p>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-top: 1rem;">
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </div>
+                            <div class="contact-item-text">
+                                <h4>البريد الإلكتروني للطلبات</h4>
+                                <p>tjasport@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            </div>
+                            <div class="contact-item-text">
+                                <h4>للاستفسار الهاتفي المباشر</h4>
+                                <p>01034335254</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="contact-form-container tja-reveal tja-delay-2">
+                    <form class="contact-form" id="consultation-form">
+                        
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <label for="parent-name">اسم ولي الأمر *</label>
+                                <input type="text" id="parent-name" class="form-control" placeholder="أ. محمد أحمد" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone-number">رقم الجوال (مع كود الدولة) *</label>
+                                <input type="tel" id="phone-number" class="form-control" placeholder="01034335254" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <label for="child-name">اسم الابن/الابنة *</label>
+                                <input type="text" id="child-name" class="form-control" placeholder="يوسف" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="child-age">عمر الطفل (سنوات) *</label>
+                                <input type="number" id="child-age" class="form-control" placeholder="8" min="3" max="18" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="main-problem">المشكلة السلوكية الأساسية أو تفاصيل الاستفسار *</label>
+                            <textarea id="main-problem" class="form-control" rows="4" placeholder="يرجى كتابة المشاكل السلوكية التي تود مناقشتها مع المستشار..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="tja-btn tja-btn-primary magnetic-btn" style="width: 100%; margin-top: 1rem;" id="submit-btn">
+                            <span>تواصل معنا</span>
+                        </button>
+                        
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Widget (Bottom Left) -->
+    <a href="https://wa.me/201034335254" class="whatsapp-widget" target="_blank" rel="noopener noreferrer" aria-label="تواصل معنا عبر واتساب" id="whatsapp-float">
+        <div class="whatsapp-pulse"></div>
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor" style="display: block;"><path d="M19.007 4.93A9.852 9.852 0 0 0 12 2c-5.434 0-9.858 4.417-9.858 9.848 0 1.737.453 3.427 1.312 4.922L2.062 22l5.364-1.405a9.816 9.816 0 0 0 4.57 1.252h.004c5.431 0 9.859-4.416 9.859-9.848a9.82 9.82 0 0 0-2.852-7.07m-7.007 15.39a8.17 8.17 0 0 1-4.168-1.14l-.299-.178-3.1 0.81 0.825-3.016-.195-.31a8.177 8.177 0 0 1-1.253-4.343c0-4.509 3.673-8.178 8.194-8.178a8.144 8.144 0 0 1 5.79 2.4 8.151 8.151 0 0 1 2.398 5.783c0 4.51-3.674 8.178-8.197 8.178m4.492-6.136c-.246-.122-1.453-.715-1.678-.797-.225-.082-.389-.122-.551.122-.164.246-.634.797-.777.96-.143.164-.287.185-.533.062a6.726 6.726 0 0 1-1.979-1.218 7.42 7.42 0 0 1-1.368-1.7c-.144-.246-.016-.379.108-.5a12.39 12.39 0 0 0 .369-.508.498.498 0 0 0-.025-.47c-.041-.082-.389-.937-.533-1.284-.14-.339-.282-.293-.389-.298-.101-.005-.218-.005-.335-.005a.644.644 0 0 0-.466.217 2.457 2.457 0 0 0-.769 1.825c0 1.077.784 2.118.893 2.266 0.11.147 1.543 2.355 3.738 3.302 0.522.224.93.359 1.248.46 0.525.166 1.002.143 1.378.088.42-.062 1.453-.593 1.657-1.166.205-.572.205-1.063.143-1.165-.062-.102-.225-.164-.471-.286"></path></svg>
+    </a>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                
+                <!-- Info Column -->
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <span>TJA</span>
+                    </div>
+                    <p>أكاديمية سلوكية تربوية تهدف لمساندة الأسر العربية في بناء شخصية الأطفال وتطوير مهاراتهم التربوية والقيادية بأحدث الأساليب العلمية.</p>
+                </div>
+
+                <!-- Quick links Column -->
+                <div class="footer-links-group">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#hero">الرئيسية</a></li>
+                        <li><a href="#challenges">لماذا TJA (التحديات)</a></li>
+                        <li><a href="#methodology">المنهجية المتبعة</a></li>
+                        <li><a href="#programs">البرامج والأسعار</a></li>
+                        <li><a href="#gallery">صور أبطالنا</a></li>
+                    </ul>
+                </div>
+
+                <!-- Program List Column -->
+                <div class="footer-links-group">
+                    <h4>برامجنا السلوكية</h4>
+                    <ul>
+                        <li><a href="#programs">برنامج بناء شخصية الطفل (٦ - ١٢ سنة)</a></li>
+                        <li><a href="#programs">برنامج تأهيل المراهقين (١٣ - ١٧ سنة)</a></li>
+                        <li><a href="#programs">معسكر (كامب) TJA التربوي</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bottom Credits -->
+            <div class="footer-bottom">
+                <p>© ٢٠٢٦ أكاديمية TJA للتربية وتعديل السلوك. جميع الحقوق محفوظة.</p>
+                <p style="color: var(--primary); font-size: 0.95rem; font-weight: 500;">تم تطوير الموقع بواسطة Mohamed ElTahan</p>
+                
+                <div class="footer-socials">
+                    <a href="#" class="social-link" aria-label="رابط فيسبوك TJA"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                    <a href="#" class="social-link" aria-label="رابط تويتر TJA"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+                    <a href="#" class="social-link" aria-label="رابط إنستغرام TJA"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Script References -->
+    <script src="js/constants/content.js"></script>
+    <script src="js/modules/i18n.js"></script>
+    <script src="js/tja-interactions.js"></script>
+</body>
+</html>
